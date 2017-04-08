@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profiledp"
+        android:title="@string/text_profile"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_salary"
+        android:enabled="true"
+        android:icon="@drawable/monthdp"
+        android:title="Salary"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_logout"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="@string/text_logout"
+        app:showAsAction="ifRoom" />
+</menu>

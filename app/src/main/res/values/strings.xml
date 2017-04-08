@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">New23DB</string>
+
+    <!-- Strings related to welcome page -->
+    <string name="text_logout">Logout</string>
+    <string name="text_home">Home</string>
+    <string name="text_profile">Profile</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_zip">Zipcode</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="submit_changes">Submit</string>
+    <string name="edit">Edit</string>
+    <string-array name="year">
+        <item>January 2017</item>
+        <item>February 2017</item>
+        <item>March 2017</item>
+    </string-array>
+    <string-array name="manager">
+        <item>Apply Leave</item>
+        <item>Check Sick Leaves</item>
+        <item>Check Paid Leaves</item>
+        <item>Check Employee Records</item>
+        <item>Approve Leave</item>
+    </string-array>
+    <string-array name="nonmanager">
+        <item>Apply Leave</item>
+        <item>Check Leave</item>
+        <item>Check Sick Leaves</item>
+        <item>Check Paid Leaves</item>
+        <item>Check Employee Records</item>
+    </string-array>
+    <string-array name="yelp">
+        <item>Leaves</item>
+        <item>Book</item>
+        <item>Room</item>
+    </string-array>
+    <string-array name="Book">
+        <item>Book Room</item>
+        <item>Check Booking Status</item>
+        <item>Delete Booking</item>
+    </string-array>
+    <string-array name="Room">
+        <item>Total Rooms</item>
+        <item>Room History</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/salarytoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/spaces1"
+            android:layout_below="@id/salarytoolbar"/>
+
+        <EditText
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Pay Period"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/spaces1"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:layout_below="@id/textview1"
+            android:textSize="34sp"
+            android:textColor="#FF8B1500"
+            android:spinnerMode="dropdown"
+            android:dropDownSelector="@drawable/img_small_box_green"
+            android:gravity="center">
+        </Spinner>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/spaces3"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@android:drawable/bottom_bar"
+            android:paddingLeft="4.0dip"
+            android:paddingTop="5.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingBottom="1.0dip"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_below="@id/spaces3">
+                <Button
+                    android:id="@+id/viewSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:text="View Payslip" />
+
+                <Button
+                    android:id="@+id/downSalary"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewSalary"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:text="Download" />
+        </LinearLayout>
+</RelativeLayout>

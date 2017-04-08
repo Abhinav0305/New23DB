@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/Toolbar_Leave"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTV"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:layout_below="@id/Toolbar_Leave"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/nameTV"
+        android:layout_toRightOf="@id/nameTV"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/noTextView"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTV"
+        android:layout_marginTop="20dp"
+        android:text="Number of Days"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/noTextView"
+        android:id="@+id/noEdit"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:singleLine="true"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdGroup"
+        android:layout_below="@id/noEdit"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Sick Leave"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/sickRadio"
+            android:theme="@style/RadioButtonStyle"
+            android:typeface="serif"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sickRadio"
+            android:text="Paid Leave"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/paidRadio"
+            android:typeface="monospace"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdGroup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dates Applied"
+        android:textStyle="bold"
+        android:id="@+id/datesApp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FromD"
+        android:layout_alignLeft="@id/noTextView"
+        android:layout_below="@id/datesApp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="From Date"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToD"
+        android:layout_alignRight="@id/noEdit"
+        android:layout_below="@id/datesApp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="To Date"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@id/nameTV"
+        android:layout_below="@id/FromD">
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/FROMdate"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/TOdate"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/ToD"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PaidLeavesTakend"
+        android:layout_alignLeft="@id/nameTV"
+        android:layout_below="@id/TOdate"
+        android:text="Paid Leaves Taken"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leavesTaken"
+        android:layout_below="@id/TOdate"
+        android:layout_toEndOf="@id/datesApp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CommentsText"
+        android:layout_alignLeft="@id/nameTV"
+        android:layout_below="@id/PaidLeavesTakend"
+        android:textStyle="bold"
+        android:text="Emp Reasons"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CommentsTextBox"
+        android:layout_below="@id/CommentsText"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:singleLine="true">
+        <requestFocus/>
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CommentsManagerText"
+        android:layout_alignLeft="@id/nameTV"
+        android:layout_below="@id/CommentsTextBox"
+        android:textStyle="bold"
+        android:text="Manager Comments"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CommentsTextBoxManager"
+        android:layout_below="@id/CommentsManagerText"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:singleLine="true">
+        <requestFocus/>
+    </EditText>
+
+    <Button
+        android:id="@+id/approvebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:text="Accept"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/rejectbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/approvebtn"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Reject" />
+
+</RelativeLayout>
